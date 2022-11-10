@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:gravity="center">
+
+    <TextView
+        android:id="@+id/sleeping"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="오늘의 수면을 평가해주세요."
+        android:textSize="20dp"
+        android:layout_gravity="left"
+        android:layout_marginLeft="25dp"
+        android:textStyle="bold"/>
+
+    <!-- 질문1 -->
+    <TextView
+        android:id="@+id/quest1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="질문 1) 수면 후 피로가 해소되었나요?"
+        android:textSize="18dp"
+        android:layout_gravity="left"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="20dp"/>
+
+    <RadioGroup
+        android:id="@+id/radioGroup1"
+        android:layout_width="360dp"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp">
+        <RadioButton
+            android:layout_weight="1"
+            android:text="그렇다"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:id="@+id/q1Btn1"/>
+        <RadioButton
+            android:layout_weight="1"
+            android:text="보통"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:id="@+id/q1Btn2"/>
+        <RadioButton
+            android:layout_weight="1"
+            android:text="아니다"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:id="@+id/q1Btn3"/>
+    </RadioGroup>
+
+    <!-- 질문2 -->
+    <TextView
+        android:id="@+id/quest2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="질문 2) 수면 중 꿈을 꾸었나요?"
+        android:textSize="18dp"
+        android:layout_gravity="left"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="20dp"/>
+
+    <RadioGroup
+        android:id="@+id/radioGroup2"
+        android:layout_width="360dp"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp">
+        <RadioButton
+            android:layout_weight="1"
+            android:text="그렇다"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:id="@+id/q2Btn1"/>
+        <RadioButton
+            android:layout_weight="1"
+            android:text="보통"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:id="@+id/q2Btn2"/>
+        <RadioButton
+            android:layout_weight="1"
+            android:text="아니다"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:id="@+id/q2Btn3"/>
+    </RadioGroup>
+
+    <!-- 질문2-1 -->
+    <TextView
+        android:id="@+id/quest2_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="질문 2-1) 그렇다를 선택했다면 악몽을 꾸었나요?"
+        android:textSize="18dp"
+        android:layout_gravity="left"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="20dp"/>
+
+    <RadioGroup
+        android:id="@+id/radioGroup2_1"
+        android:layout_width="360dp"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp">
+        <RadioButton
+            android:layout_weight="1"
+            android:text="그렇다"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:id="@+id/q2_1Btn1"/>
+        <RadioButton
+            android:layout_weight="1"
+            android:text="아니다"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:id="@+id/q2_1Btn2"/>
+    </RadioGroup>
+
+    <!-- 질문3 -->
+    <TextView
+        android:id="@+id/quest3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="질문 3) 수면 중 가위에 눌렸거나,\n             신체에 불편함이 있었나요? "
+        android:textSize="18dp"
+        android:layout_gravity="left"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="20dp"/>
+
+    <RadioGroup
+        android:id="@+id/radioGroup3"
+        android:layout_width="360dp"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp">
+        <RadioButton
+            android:layout_weight="1"
+            android:text="그렇다"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:id="@+id/q3Btn1"/>
+        <RadioButton
+            android:layout_weight="1"
+            android:text="보통"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:id="@+id/q3Btn2"/>
+        <RadioButton
+            android:layout_weight="1"
+            android:text="아니다"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:id="@+id/q3Btn3"/>
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/submit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@drawable/main_button_style"
+        android:text="제출하기"
+        android:textColor="@color/white"
+        android:layout_marginTop="30dp"/>
+
+    <Button
+        android:id="@+id/back_home"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="홈으로 돌아갈래요"
+        android:textSize="15dp"
+        android:textColor="#646464"
+        android:minHeight="0dp"
+        android:background="@drawable/expt_button_style"
+        android:layout_marginTop="15dp"/>
+
+</LinearLayout>
