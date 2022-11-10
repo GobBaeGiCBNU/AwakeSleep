@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:gravity="center"
+    android:padding="20dp">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="일어날 시간을 지정해 주세요!"
+        android:gravity="center"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:paddingTop="50dp"/>
+
+    <TimePicker
+        android:id="@+id/wake_time"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:timePickerMode="spinner"/>
+
+    <TextView
+        android:id="@+id/select_time"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="기상시간:"
+        android:gravity="center"
+        android:textSize="18dp"/>
+
+    <Button
+        android:id="@+id/appinfo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="어플 사용이 처음이신가요?"
+        android:textSize="15dp"
+        android:textColor="#646464"
+        android:minHeight="0dp"
+        android:background="@drawable/expt_button_style"
+        android:layout_marginTop="15dp"/>
+
+    <Button
+        android:id="@+id/sleep_calender"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@drawable/main_button_style"
+        android:text="수면 calender"
+        android:textColor="@color/white"
+        android:layout_marginTop="100dp"/>
+
+    <Button
+        android:id="@+id/sleep_start"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@drawable/main_button_style"
+        android:text="수면 시작"
+        android:textColor="@color/white"
+        android:layout_marginTop="30dp"/>
+
+</LinearLayout>
