@@ -1,18 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
-<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
-    <item
-        android:top="-2dp"
-        android:right="-2dp"
-        android:left="-2dp">
-        <shape android:shape="rectangle">
-            //배경색
-            <solid android:color="#00ffffff"/>
-            //테두리색
-            <stroke
-                android:width="1dp"
-                android:color="#646464"/>
-            <padding
-                android:bottom="0dp"/>
-        </shape>
-    </item>
-</layer-list>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_pressed="true"
+        android:drawable="@drawable/expt_button2"/>
+
+    <item android:drawable="@drawable/expt_button1"/>
+</selector>
