@@ -18,10 +18,13 @@
         android:textStyle="bold"
         android:layout_marginBottom="30dp"/>
 
-    <CalendarView
+    <com.prolificinteractive.materialcalendarview.MaterialCalendarView
+        xmlns:app="http://schemas.android.com/apk/res-auto"
         android:id="@+id/calendar"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"/>
+        android:layout_height="wrap_content"
+        app:mcv_showOtherDates="all"
+        app:mcv_selectionColor="#6393F2"/>
 
     <Button
         android:id="@+id/back_home"
