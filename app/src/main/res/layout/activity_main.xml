@@ -17,7 +17,7 @@
         android:gravity="center"
         android:textSize="20dp"
         android:textStyle="bold"
-        android:paddingTop="50dp"/>
+        android:paddingTop="30dp"/>
 
     <TimePicker
         android:id="@+id/wake_time"
@@ -46,6 +46,16 @@
         android:layout_marginTop="15dp"/>
 
     <Button
+        android:id="@+id/connection_check"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@drawable/main_button_style"
+        android:text="기기 연결 확인"
+        android:textColor="@color/white"
+        android:layout_marginTop="40dp"/>
+
+    <Button
         android:id="@+id/sleep_calender"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -53,7 +63,7 @@
         android:background="@drawable/main_button_style"
         android:text="수면 calender"
         android:textColor="@color/white"
-        android:layout_marginTop="100dp"/>
+        android:layout_marginTop="20dp"/>
 
     <Button
         android:id="@+id/sleep_start"
@@ -63,6 +73,6 @@
         android:background="@drawable/main_button_style"
         android:text="수면 시작"
         android:textColor="@color/white"
-        android:layout_marginTop="30dp"/>
+        android:layout_marginTop="20dp"/>
 
 </LinearLayout>

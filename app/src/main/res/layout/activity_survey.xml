@@ -15,7 +15,7 @@
         android:text="오늘의 수면을 평가해주세요."
         android:textSize="20dp"
         android:layout_gravity="left"
-        android:layout_marginLeft="25dp"
+        android:layout_marginLeft="40dp"
         android:textStyle="bold"/>
 
     <!-- 질문1 -->
@@ -23,18 +23,18 @@
         android:id="@+id/quest1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="질문 1) 수면 후 피로가 해소되었나요?"
+        android:text="Q. 수면 후 피로가 해소되었나요?"
         android:textSize="18dp"
         android:layout_gravity="left"
-        android:layout_marginLeft="25dp"
-        android:layout_marginTop="20dp"/>
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="30dp"/>
 
     <RadioGroup
         android:id="@+id/radioGroup1"
-        android:layout_width="360dp"
+        android:layout_width="300dp"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        android:layout_marginTop="10dp">
+        android:layout_marginTop="15dp">
         <RadioButton
             android:layout_weight="1"
             android:text="그렇다"
@@ -63,18 +63,18 @@
         android:id="@+id/quest2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="질문 2) 수면 중 꿈을 꾸었나요?"
+        android:text="Q. 수면 중 꿈을 꾸었나요?"
         android:textSize="18dp"
         android:layout_gravity="left"
-        android:layout_marginLeft="25dp"
-        android:layout_marginTop="20dp"/>
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="25dp"/>
 
     <RadioGroup
         android:id="@+id/radioGroup2"
-        android:layout_width="360dp"
+        android:layout_width="300dp"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        android:layout_marginTop="10dp">
+        android:layout_marginTop="15dp">
         <RadioButton
             android:layout_weight="1"
             android:text="그렇다"
@@ -103,18 +103,18 @@
         android:id="@+id/quest2_1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="질문 2-1) 그렇다를 선택했다면 악몽을 꾸었나요?"
+        android:text="Q. 그렇다를 선택했다면 악몽을 꾸었나요?"
         android:textSize="18dp"
         android:layout_gravity="left"
-        android:layout_marginLeft="25dp"
-        android:layout_marginTop="20dp"/>
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="25dp"/>
 
     <RadioGroup
         android:id="@+id/radioGroup2_1"
-        android:layout_width="360dp"
+        android:layout_width="300dp"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        android:layout_marginTop="10dp">
+        android:layout_marginTop="15dp">
         <RadioButton
             android:layout_weight="1"
             android:text="그렇다"
@@ -136,18 +136,18 @@
         android:id="@+id/quest3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="질문 3) 수면 중 가위에 눌렸거나,\n             신체에 불편함이 있었나요? "
+        android:text="Q. 수면 중 가위에 눌렸거나,\n    신체에 불편함이 있었나요? "
         android:textSize="18dp"
         android:layout_gravity="left"
-        android:layout_marginLeft="25dp"
-        android:layout_marginTop="20dp"/>
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="25dp"/>
 
     <RadioGroup
         android:id="@+id/radioGroup3"
-        android:layout_width="360dp"
+        android:layout_width="300dp"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        android:layout_marginTop="10dp">
+        android:layout_marginTop="15dp">
         <RadioButton
             android:layout_weight="1"
             android:text="그렇다"
