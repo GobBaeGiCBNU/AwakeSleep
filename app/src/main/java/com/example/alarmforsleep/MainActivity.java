@@ -29,12 +29,19 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onTimeChanged(TimePicker timePicker, int hour, int minute) {
                 //오전, 오후를 확인하기 위한 if 문 (hour-1에서 예외사항은 나중에 조건문 수정 필요)
-                if (hour > 12) {
-                    hour -= 12;
-                    select_time.setText("기상시간: 오후 " + (hour-1) + "시 " + minute + "분 ~ 오후" + hour + "시 " + minute + "분");
+                if (hour >= 12) {
+                    if (hour == 12)
+                        select_time.setText("기상시간: 오전 " + (hour-1) + "시 " + minute + "분 ~ 오후 " + hour + "시 " + minute + "분");
+                    else{
+                        hour -= 12;
+                        select_time.setText("기상시간: 오후 " + (hour-1) + "시 " + minute + "분 ~ 오후 " + hour + "시 " + minute + "분");
+                    }
                 }
                 else {
-                    select_time.setText("기상시간: 오전 " + (hour-1) + "시 " + minute + "분 ~ 오전" + hour + "시 " + minute + "분");
+                    if (hour == 0)
+                        select_time.setText("기상시간: 오후 11시 " + minute + "분 ~ 오전 " + hour + "시 " + minute + "분");
+                    else
+                        select_time.setText("기상시간: 오전 " + (hour-1) + "시 " + minute + "분 ~ 오전 " + hour + "시 " + minute + "분");
                 }
             }
         });
