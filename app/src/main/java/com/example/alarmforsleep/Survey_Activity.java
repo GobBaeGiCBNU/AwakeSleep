@@ -11,10 +11,13 @@ import android.widget.RadioGroup;
 import android.widget.TextView;
 import android.widget.TimePicker;
 
+import org.w3c.dom.Text;
+
 
 public class Survey_Activity extends AppCompatActivity {
 
     private RadioGroup radioGroup1, radioGroup2, radioGroup2_1, radioGroup3;
+    private TextView textview2_1;
     private int q1, q2, q2_1=0, q3;
 
     @Override
@@ -42,24 +45,34 @@ public class Survey_Activity extends AppCompatActivity {
 
         //질문 2 설문조사 값 설정
         radioGroup2 = (RadioGroup) findViewById(R.id.radioGroup2);
+
+        //질문 2-1 설문조사 Visibility 결정
+        textview2_1 = (TextView) findViewById(R.id.quest2_1);
+        radioGroup2_1 = (RadioGroup) findViewById(R.id.radioGroup2_1);
+
         radioGroup2.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
             @Override
             public void onCheckedChanged(RadioGroup radioGroup, int checkedID) {
                 switch (checkedID) {
                     case R.id.q2Btn1:
                         q2 = 1;
+                        textview2_1.setVisibility(View.VISIBLE);
+                        radioGroup2_1.setVisibility(View.VISIBLE);
                         break;
                     case R.id.q2Btn2:
                         q2 = 2;
+                        textview2_1.setVisibility(View.GONE);
+                        radioGroup2_1.setVisibility(View.GONE);
                         break;
                     case R.id.q2Btn3:
                         q2 = 3;
+                        textview2_1.setVisibility(View.GONE);
+                        radioGroup2_1.setVisibility(View.GONE);
                 }
             }
         });
 
         //질문 2-1 설문조사 값 설정
-        radioGroup2_1 = (RadioGroup) findViewById(R.id.radioGroup2_1);
         radioGroup2_1.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
             @Override
             public void onCheckedChanged(RadioGroup radioGroup, int checkedID) {
