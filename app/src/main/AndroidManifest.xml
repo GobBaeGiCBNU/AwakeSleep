@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    package="com.example.alarmforsleep">
+    package="com.example.alarmforsleep" >
 
     <application
         android:allowBackup="true"
@@ -12,24 +12,32 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.AlarmForSleep"
-        tools:targetApi="31">
+        tools:targetApi="31" >
         <activity
             android:name=".MainActivity"
             android:exported="false" />
         <activity
             android:name=".Splash_logo_Activity"
             android:exported="true"
-            android:theme="@style/Theme.AppCompat.Light.NoActionBar">
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".Sleep_Start_Activity"></activity>
-        <activity android:name=".Sleep_Calender_Activity"></activity>
-        <activity android:name=".Sleep_Pattern_Activity"></activity>
-        <activity android:name=".Survey_Activity"></activity>
+
+        <service
+            android:name=".AlarmService"
+            android:enabled="true"
+            android:exported="true" />
+
+        <receiver android:name=".AlarmReceiver" />
+        <activity android:name=".Alarm_Activity" />
+        <activity android:name=".Sleep_Start_Activity" />
+        <activity android:name=".Sleep_Calender_Activity" />
+        <activity android:name=".Sleep_Pattern_Activity" />
+        <activity android:name=".Survey_Activity" />
     </application>
 
 </manifest>
