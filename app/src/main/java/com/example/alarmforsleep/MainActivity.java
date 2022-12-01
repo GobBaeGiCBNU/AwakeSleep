@@ -68,5 +68,15 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+
+        Button sleep_bluetooth = (Button) findViewById(R.id.sleep_bluetooth);
+
+        sleep_bluetooth.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                Intent intent = new Intent(android.provider.Settings.ACTION_BLUETOOTH_SETTINGS);
+                startActivity(intent);
+            }
+        });
+
     }
 }
