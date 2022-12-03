@@ -103,6 +103,7 @@
         android:id="@+id/quest2_1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:visibility="gone"
         android:text="질문 2-1) 그렇다를 선택했다면 악몽을 꾸었나요?"
         android:textSize="18dp"
         android:layout_gravity="left"
@@ -111,6 +112,7 @@
 
     <RadioGroup
         android:id="@+id/radioGroup2_1"
+        android:visibility="gone"
         android:layout_width="360dp"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
