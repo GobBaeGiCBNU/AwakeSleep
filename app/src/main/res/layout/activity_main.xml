@@ -46,7 +46,7 @@
         android:layout_marginTop="15dp"/>
 
     <Button
-        android:id="@+id/connection_check"
+        android:id="@+id/sleep_bluetooth"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center"

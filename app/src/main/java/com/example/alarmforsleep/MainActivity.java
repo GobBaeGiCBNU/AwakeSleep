@@ -62,6 +62,17 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+        // 기기 설명 페이지 클릭 시 액티비티 전환
+        Button app_info = (Button) findViewById(R.id.appinfo);
+        app_info.setOnClickListener(new View.OnClickListener(){
+
+            @Override
+            public void onClick(View view){
+                Intent intent = new Intent(getApplicationContext(), Appinfo_Activity.class);
+                startActivity(intent);
+            }
+        });
+
         //수면 Calender 클릭 시 액티비티 전환
         Button sleep_calender = (Button) findViewById(R.id.sleep_calender);
         sleep_calender.setOnClickListener(new View.OnClickListener(){
