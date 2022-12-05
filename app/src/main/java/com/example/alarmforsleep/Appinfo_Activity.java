@@ -1,6 +1,8 @@
 package com.example.alarmforsleep;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.Button;
 
 import androidx.annotation.NonNull;
 import androidx.core.view.ViewCompat;
@@ -14,13 +16,13 @@ public class Appinfo_Activity extends FragmentActivity {
 
     private ViewPager2 mPager;
     private FragmentStateAdapter pagerAdapter;
-    private int num_page = 4;
+    private int num_page = 3;
     private CircleIndicator3 mIndicator;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_appinfo);
 
         //ViewPager2
         mPager = findViewById(R.id.viewpager);
@@ -70,6 +72,16 @@ public class Appinfo_Activity extends FragmentActivity {
                 } else {
                     page.setTranslationY(myOffset);
                 }
+            }
+        });
+
+        Button back_home = (Button) findViewById(R.id.back_home);
+        back_home.setOnClickListener(new View.OnClickListener(){
+
+            @Override
+            public void onClick(View view){
+                Intent intent = new Intent(getApplicationContext(), MainActivity.class);
+                startActivity(intent);
             }
         });
 

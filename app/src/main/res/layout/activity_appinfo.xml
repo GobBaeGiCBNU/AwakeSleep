@@ -4,12 +4,15 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".MainActivity">
+    tools:context=".MainActivity"
+    android:layout_gravity="center"
+    android:weightSum="10">
 
     <FrameLayout
-        android:layout_marginTop="20dp"
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="0dp"
+        android:layout_weight="9"
+        android:layout_gravity="center">
         <androidx.viewpager2.widget.ViewPager2
             android:id="@+id/viewpager"
             android:clipToPadding="false"
@@ -23,7 +26,17 @@
             android:layout_width="match_parent"
             android:layout_height="100dp"
             android:layout_gravity="bottom"/>
-
     </FrameLayout>
+    <Button
+        android:id="@+id/back_home"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="홈으로 돌아갈래요"
+        android:textSize="15dp"
+        android:textColor="#646464"
+        android:minHeight="0dp"
+        android:background="@drawable/expt_button_style"
+        android:layout_marginTop="15dp"/>
 
 </LinearLayout>
