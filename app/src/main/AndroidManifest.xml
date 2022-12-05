@@ -38,6 +38,7 @@
         <activity android:name=".Sleep_Calender_Activity" />
         <activity android:name=".Sleep_Pattern_Activity" />
         <activity android:name=".Survey_Activity" />
+        <activity android:name=".Appinfo_Activity" />
     </application>
 
 </manifest>
